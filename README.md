@@ -33,7 +33,7 @@ Every earlier port rebuilt something that stores or serves data. This one rebuil
 what makes the calling stop early. There is no data model at the centre of it. The answer
 to every question is a sequence of calls, which is why the comparison against the original
 compares traces of who was reached rather than values that came back, and why the one
-difference the comparison found was invisible to a suite of thirty checks that only looked
+difference the comparison found was invisible to a suite of thirty-one checks that only looked
 at return values.
 
 ---
@@ -46,7 +46,7 @@ at return values.
 ⏱️ 1,406,146 nanoseconds → **24,030** nanoseconds, one write sequence<br>
 ⏱️ 2,155,510 nanoseconds → **11,668** nanoseconds, one fork sequence<br>
 🎯 7 of 7 → **7 of 7** sequences answered identically<br>
-🧪 not measured → **87** checks
+🧪 not measured → **88** checks
 
 Full method and the numbers that did *not* make this list:
 [`bench/REPORT.md`](https://github.com/TylerJewell/akka-specify-harness/blob/main/deepseek-harness-port/bench/REPORT.md).
@@ -59,7 +59,7 @@ Full method and the numbers that did *not* make this list:
 💬 **315** exchanges with the model<br>
 ✍️ **288,346** tokens written by the model, **76,833,534** counting everything sent and re-sent<br>
 🙋 **0** questions to a human<br>
-🧪 **87** tests
+🧪 **88** tests
 
 ```bash
 python toolkit/tokens.py --port deepseek-harness
